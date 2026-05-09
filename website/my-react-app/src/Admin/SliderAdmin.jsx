@@ -11,7 +11,7 @@ return(
             <p>ABC@gmail.com</p>
         </div>
          <div className="Manage">
-        <div className="Dashboard">
+        <div className="Dashboard" onClick={()=>navigate('/admin')}>
             <p>📊 Dashboard</p>
         </div>
         <div className="Users" onClick={()=>navigate('/admin/users')}>
@@ -26,10 +26,7 @@ return(
         <div className="Artists"onClick={()=>navigate('/admin/artists')}>
         <p>🧑‍🎤 Artists</p>
         </div>
-        <div className="Analytics">
-        <p>📈 Analytics</p>
-        </div>
-        <div className="LogOut">
+        <div className="LogOut" onClick={()=>navigate('/')}>
         <p>⬅️ Log Out</p>
         </div>
     </div>

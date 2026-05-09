@@ -13,6 +13,7 @@ import Artists from "./Admin/Artists";
 import Album from "./Admin/Album";
 import ViewDetail from './Admin/DetailAlbum';
 import Login from './prop/Login';
+import Dashboard from './Admin/Dashboard';
 import PayPal from './prop/paypal';
 import { Routes, Route, Navigate } from 'react-router-dom';
 import { useState, useEffect } from 'react';
@@ -66,7 +67,7 @@ function App() {
       </Route>
 
       <Route path='/admin' element={<AdminGuard />}>
-        <Route index element={<Users />} />
+      <Route index element={<Dashboard />} />
         <Route path='users' element={<Users />} />
         <Route path='track' element={<Track />} />
         <Route path='artists' element={<Artists />} />
